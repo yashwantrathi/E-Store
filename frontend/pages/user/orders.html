@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - E-Store</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="nav-logo">
+                <h1><i class="fas fa-shopping-bag"></i> E-Store</h1>
+            </a>
+            <nav class="main-nav">
+                <a href="../../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+                <!-- User profile will be shown here -->
+                <div id="user-profile" class="hidden">
+                    <span id="user-name" class="user-greeting"></span>
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="orders-page-main">
+        <div class="container">
+            <div class="page-header-content">
+                <h1><i class="fas fa-receipt"></i> My Orders</h1>
+                <p>View your order history and track their status</p>
+            </div>
+
+            <!-- Orders will be loaded into this container -->
+            <div id="orders-container" class="orders-container">
+                <!-- Loading spinner or "No Orders" message will appear here -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading your orders...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 E-Store. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Link to the new JavaScript file -->
+    <script src="../../js/orders.js"></script>
+    <script src="../../js/main.js"></script> <!-- For cart count and logout -->
+</body>
+</html>

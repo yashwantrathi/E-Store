@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store | Modern Shopping Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <h1><i class="fas fa-shopping-bag"></i> E-Store</h1>
+            </a>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for products...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="pages/user/cart.html" class="nav-link cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+                
+                <div id="user-actions">
+                    <a href="pages/user/login.html" class="nav-link">Login</a>
+                    <a href="pages/user/register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                
+               <div id="user-profile" class="hidden">
+    <span id="user-name" class="user-greeting"></span>
+    <a href="pages/user/orders.html" class="nav-link">My Orders</a>
+    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+</div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Discover Amazing Products</h2>
+                    <p class="hero-subtitle">Shop the latest trends with unbeatable prices and fast delivery</p>
+                    <a href="#products-section" class="btn btn-primary btn-large">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+    <div class="container">
+        <h3 class="section-title">Shop by Category</h3>
+        
+        <!-- All category cards must be DIRECT children of this div -->
+        <div class="categories-grid">
+
+            <div class="category-card" onclick="searchByCategory('Laptops')">
+                <i class="fas fa-laptop"></i>
+                <span>Laptops</span>
+            </div>
+            
+            <div class="category-card" onclick="searchByCategory('Smart Phones')">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Smart Phones</span>
+            </div>
+            
+            <div class="category-card" onclick="searchByCategory('Audio')">
+                <i class="fas fa-headphones"></i>
+                <span>Audio</span>
+            </div>
+            
+            <div class="category-card" onclick="searchByCategory('Photography')">
+                <i class="fas fa-camera-retro"></i>
+                <span>Photography</span>
+            </div>
+            <div class="category-card" onclick="searchByCategory('Accessories')">
+    <i class="fas fa-puzzle-piece"></i>
+    <span>Accessories</span>
+</div>
+
+
+        </div> <!-- <<< THE GRID CLOSES HERE, AFTER ALL THE CARDS -->
+    </div>
+</section>
+
+        <section id="products-section" class="products-section">
+            <div class="container">
+                <h3 class="section-title">Featured Products</h3>
+                <div id="products-grid" class="products-grid">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading amazing products...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4><i class="fas fa-shopping-bag"></i> E-Store</h4>
+                    <p>Your trusted partner for online shopping. Quality products, competitive prices, and exceptional service.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products-section">Products</a></li>
+                        <li><a href="pages/user/cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@e-store.com</li>
+                        <li><i class="fas fa-phone"></i> +91 987654321</li>
+                    </ul>
+                    <a href="pages/admin/login.html" class="admin-link">Admin Portal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+    <script src="js/main.js"></script>
+    <!-- Developer Footer -->
+<footer class="developer-footer">
+    <span>Developed by Yashwanth Rathi</span>
+    <button class="btn" onclick="alert('Contact me at: yashwanthrathi18@gmail.com')">
+        <i class="fas fa-envelope"></i> Contact
+    </button>
+</footer>
+
+</body>
+</html>

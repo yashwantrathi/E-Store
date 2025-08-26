@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - E-Store</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <a href="../../index.html" class="nav-logo">
+                <h1><i class="fas fa-shopping-bag"></i> E-Store</h1>
+            </a>
+        </div>
+    </header>
+
+    <main class="form-page-main">
+        <div class="form-container">
+            <div class="form-card">
+                <div class="form-header">
+                    <h2><i class="fas fa-user-shield"></i> Admin Portal</h2>
+                    <p>Access the administrative dashboard</p>
+                </div>
+
+                <form id="admin-login-form" class="auth-form">
+                    <div id="form-error-message" class="form-error hidden"></div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Admin Email
+                        </label>
+                        <input type="email" id="email" name="email" 
+                               placeholder="Enter admin email" 
+                               value="admin@shop.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            <i class="fas fa-lock"></i> Password
+                        </label>
+                        <input type="password" id="password" name="password" 
+                               placeholder="Enter admin password" 
+                               value="1234" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-full-width">
+                            <i class="fas fa-sign-in-alt"></i> Access Dashboard
+                        </button>
+                    </div>
+                </form>
+
+                <div style="background: #e8f4fd; border: 1px solid #3498db; border-radius: 8px; padding: 15px; margin: 20px 0; text-align: center;">
+                    <p><i class="fas fa-info-circle" style="color: #3498db;"></i> <strong>Default Admin Credentials:</strong></p>
+                    <p>Email: admin@shop.com</p>
+                    <p>Password: 1234</p>
+                </div>
+
+                <div class="form-footer-link">
+                    <p>
+                        <a href="../../index.html">
+                            <i class="fas fa-arrow-left"></i> Back to Store
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/admin-auth.js"></script>
+</body>
+</html>

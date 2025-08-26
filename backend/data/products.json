@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "Samsung S25 Ultra",
+    "description": "Premium flagship with Snapdragon 8 Elite, 6.9″ Dynamic AMOLED 2X display, quad 200MP pro-grade cameras, S-Pen support, and long-lasting 5000mAh battery with super-fast charging.",
+    "price": 120000,
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR3J62Ozq4b-BULxOyQbwVeoL7yybLursNd5YvA2WGjvyYYk0rMZrX4A3MNzL1IKBUW1g4mDtC-fUuYMTkXeR0L6ytdwDPnuwbBSrsy8dHA",
+    "category": "Smart Phones",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "2",
+    "name": "Dell Inspiron 14 2-in-1 Laptop",
+    "description": "Convertible laptop with touchscreen display, Intel performance, flexible modes, and long-lasting battery life.",
+    "price": 96000,
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/14-2-in-1-7440-intel/media-gallery/notebook-inspiron-14-7440-t-ice-blue-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=603&qlt=100,1&resMode=sharp2&size=603,402&chrss=full",
+    "category": "Laptops",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "3",
+    "name": "OnePlus 13 5G 16GB 512GB Black Eclipse",
+    "description": "Flagship power with Snapdragon 8 Elite, 6.82″ 120Hz AMOLED display, triple 50MP Hasselblad cameras, and massive 6000mAh battery with 100W fast charging.",
+    "price": 77000,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDdbN-hbHRnI44FovljLc3em9WufYVlOt-kPERVjOr_dwzPXRx13R0AOZwSvqVuVAe1Xo7ZxAcMnP39aijFPtajI01h6SWwcD7o7L42fvnyx5s43wo2v9vXmiqjbjO_qGcOFWg0mk3aO8&usqp=CAc",
+    "category": "Smart Phones",
+    "stock": 20,
+    "featured": true
+  },
+  {
+    "id": "4",
+    "name": "Boat Nirvana Crystl True Wireless Earbuds",
+    "description": "Premium earbuds with crystal-clear sound, ANC, long battery life, and stylish design for an immersive audio experience..",
+    "price": 2750,
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSVBa3sX2jnc-TgJZFMZ_cYRX6zzNJzY2AhIEHyJwb1Edvvtz-6e36cccb_Am3usN6t1PIr-gzooFgy36XI8N4ioXZyEyzfo8uZAkZY-tAC8ERX4o48x3-6bQ",
+    "category": "Audio",
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "Nikon Z50 II Mirrorless Camera",
+    "description": "Compact mirrorless with 4K video, fast autofocus, high-quality low-light performance, and versatile Z-mount lens support.",
+    "price": 80000,
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTMhPBZZvMeFuQtX0UnyueAVvNOxcTLgs07dU2dBTF1rh50bzSddl9-RCIYUzOrihpqARA8fE-WQdoMqUirTtJi7HNRhEtc7R4xQz78qdDn_Dc17y9I6_qw",
+    "category": "Photography",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "6",
+    "name": "Dell Inspiron 3530 Silver Laptop",
+    "description": "Sleek everyday laptop with Intel Core performance, Full HD display, ample storage, and long-lasting battery.",
+    "price": 53000,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRyUMdwPUYuy9qH3wSX0OEDWVtkSjHrzyJ9uQmoPw20Vxu6XK1tYY8e4tWE5rRS2sq2pDhtz6H0nR9kgaUZ5KyGajJiebF0TjqDOsEmOFUU",
+    "category": "Laptops",
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": "7",
+    "name": "Apple AirPods Pro",
+    "description": "Premium wireless earbuds with Active Noise Cancellation, Adaptive Transparency, spatial audio, and all-day comfort.",
+    "price": 23900,
+    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FMT_WHH?wid=750&hei=556&fmt=jpeg&qlt=90&.v=1724041668836",
+    "category": "Audio",
+    "stock": 19,
+    "featured": false
+  },
+  {
+    "id": "8",
+    "name": "Samsung S25 5G 12GB 256GB Icy Blue",
+    "description": "Flagship smartphone with Snapdragon 8 Elite, vibrant AMOLED display, pro-grade cameras, and long-lasting battery.",
+    "price": 75000,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfKzsWF_VOPmU3_h9-qN-ai4RR-joK4YWho_zcft63Zf6hhUkP16ktxJuB2mm8glM6mcEvl4mNMLq89J8WX_y71PuufrpTBQeq7pJEyqajQYmLbGsupNfZSZg",
+    "category": "Smart Phones",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "9",
+    "name": "Croma 20W Portable Bluetooth Speaker",
+    "description": "Compact speaker with powerful 20W sound, deep bass, Bluetooth connectivity, and long battery life for on-the-go music.",
+    "price": 4100,
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQcKTZAQFHnxd9ZNcBD-fozhXPhXjJKiCEuaSLqycYFLch5yg6QQY-GAuubXy0kkOiTMvUtqRS_Qkfl-xONDsQ6C1Guysvj44GXx5cQzlIF",
+    "category": "Audio",
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": "10",
+    "name": "HP OmniBook X Flip 14 Intel Core Ultra 7 Laptop",
+    "description": "Versatile 2-in-1 laptop with Intel Core Ultra 7, vibrant 14″ touchscreen, sleek design, and long battery life.",
+    "price": 118000,
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR-iZP60CEfHH7WV_-mskGuVS4t54U4Jqw_Ixp0Z7ZBCuJ0VQpW7utjpqIVg9HAcFSxHnSEbN2UhikrmL280BGnThFK6q_A0CoUSyAsD-ggrJxVRaOwXyw6",
+    "category": "Laptops",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "11",
+    "name": "OnePlus 13s 256 GB, 12 GB RAM, Green Silk, Mobile Phone",
+    "description": "Sleek flagship with Snapdragon power, 120Hz AMOLED display, pro-grade triple cameras, and fast-charging battery.",
+    "price": 54000,
+    "image": "https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/eruWCYU543-oneplus-13s-494581934-i-1-1200wx1200h.jpeg",
+    "category": "Smart Phones",
+    "stock": 18,
+    "featured": true
+  },
+  {
+    "id": "12",
+    "name": "boAt Stone Portable Bluetooth Speaker",
+    "description": "Rugged speaker with powerful sound, deep bass, Bluetooth connectivity, and long-lasting battery life.",
+    "price": 1500,
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR-B7lgcwEkMl9AEQrxR9kEeQCzqu5fAo4WAaSDIn9oymT3CWWj8GsVuDXSNfls32-hUF9CsPMBxoTe6QtdPpkUJRIEyCrazRO_O6WZPWE",
+    "category": "Audio",
+    "stock": 19,
+    "featured": true
+  },
+  {
+    "id": "13",
+    "name": "Neewer 4-Light Kit with Background Support System",
+    "description": "Complete studio setup with 4 adjustable lights, softboxes, and durable background support for professional photography and video.",
+    "price": 40000,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQgL7QeCUn4tRXtZ4UDEEomRT8QzskxV2A3hIbAnUDTZMWkSD7sZu1lup9cSZf6LTaZQXYOu5PC7j9LrvJLszKTOq8SHE0l_5uFu6KIIbS_DEdl_H8C6aAjzA",
+    "category": "Photography",
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": "14",
+    "name": "OnePlus Nord 5 8GB 256GB Marble Sands",
+    "description": "Stylish smartphone with smooth performance, 120Hz AMOLED display, versatile cameras, and fast charging.",
+    "price": 27000,
+    "image": "https://assets.sangeethamobiles.com/product_img/19219/1752044077_Maj.jpg",
+    "category": "Smart Phones",
+    "stock": 18,
+    "featured": false
+  },
+  {
+    "id": "15",
+    "name": "Samsung Galaxy A56 5G",
+    "description": "Mid-range 5G phone with vibrant AMOLED display, versatile cameras, reliable performance, and long-lasting battery.",
+    "price": 27000,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSTnOgcDwj0Tph0z7-DXlcrYbdkW_eqR50iTPjd_3o-NgkVqz94w6vdrOdEhkehoTTorntHofzev4JrocDJQyucOyphMrQTUAyuOwMoyet_UDqlxp0obwVaHQ",
+    "category": "Smart Phones",
+    "stock": 20,
+    "featured": false
+  },
+  {
+    "id": "16",
+    "name": "Oppo Reno 14 5G Mobile Phone",
+    "description": "Oppp=o Flagship phone series",
+    "price": 40000,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTu7-EKyHa5FPsiCd5CGZlM6lv7Rzvcxm9-Pn-gv9CsAUgnrHNbtDXgAXflG_eBV-WrVf4iE8WG3Wn0qPcLNQEB9iSsIha03qQdEfVGEx6USHTKCUvMWusmQA",
+    "category": "Smart Phones",
+    "stock": 15,
+    "featured": false
+  }
+]

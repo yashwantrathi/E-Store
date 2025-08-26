@@ -1,0 +1,51 @@
+[
+  {
+    "id": "697ce00c-74b5-4ac0-bc80-8e8e927de9f2",
+    "name": "Yashwanth Rathi",
+    "email": "yashwanth@gmail.com",
+    "password": "yashwanth",
+    "createdAt": "2025-08-26T04:19:22.624Z"
+  },
+  {
+    "id": "ef206ddc-916b-4095-9e97-0dbe1a322136",
+    "name": "joe",
+    "email": "Joe@corizo.com",
+    "password": "joe123",
+    "createdAt": "2025-08-26T04:21:27.549Z"
+  },
+  {
+    "id": "26c72d64-06c5-4c7e-9156-f3d261a92d7d",
+    "name": "jay rathi",
+    "email": "jay26@gmail.com",
+    "password": "jay123",
+    "createdAt": "2025-08-26T04:23:03.578Z"
+  },
+  {
+    "id": "ab172156-d5c9-4a29-bd31-155dd581d641",
+    "name": "Corizo",
+    "email": "Corizo@gmail.com",
+    "password": "corizo",
+    "createdAt": "2025-08-26T04:25:16.632Z"
+  },
+  {
+    "id": "03ee0ce5-b8b9-4e86-998b-61e0750a8965",
+    "name": "Virat Kohli",
+    "email": "viratkohli@gmail.com",
+    "password": "viratkohli",
+    "createdAt": "2025-08-26T04:26:59.889Z"
+  },
+  {
+    "id": "b6af05d5-50b0-4c6e-aa4c-bfdedc8c0638",
+    "name": "Albert",
+    "email": "albert@gmail.com",
+    "password": "albert",
+    "createdAt": "2025-08-26T04:28:41.297Z"
+  },
+  {
+    "id": "d1243d49-09b8-4856-85f9-90acda8d4066",
+    "name": "Yash",
+    "email": "yash@gmail.com",
+    "password": "yash12",
+    "createdAt": "2025-08-26T04:38:44.392Z"
+  }
+]

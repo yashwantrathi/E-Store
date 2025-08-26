@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - E-Store</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="nav-logo">
+                <h1><i class="fas fa-shopping-bag"></i> E-Store</h1>
+            </a>
+            <nav class="main-nav">
+                <a href="../../index.html" class="nav-link"><i class="fas fa-home"></i> Continue Shopping</a>
+                <div id="user-profile" class="hidden">
+                    <span id="user-name" class="user-greeting"></span>
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+                <div id="user-actions">
+                    <a href="login.html" class="nav-link">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Cart Content -->
+    <main class="cart-page-main">
+        <div class="container">
+            <div class="page-header-content" style="text-align: center; margin-bottom: 40px;">
+                <h1><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h1>
+                <p>Review your items before checkout</p>
+            </div>
+
+            <!-- This is the main grid for cart items and summary -->
+            <div class="cart-content" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+                
+                <!-- Column 1: Cart Items -->
+                <div id="cart-items-container">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading your cart...</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Cart Summary -->
+                <div id="cart-summary" class="cart-summary hidden">
+                    <h3><i class="fas fa-calculator"></i> Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (<span id="total-items">0</span> items):</span>
+                        <span id="subtotal">₹0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span class="free-shipping" style="color: var(--success-color); font-weight: 600;">FREE</span>
+                    </div>
+                    <div class="summary-row total-row" style="border-top: 2px solid var(--border-color); padding-top: 1rem; margin-top: 1rem; font-size: 1.25rem;">
+                        <strong>Total: <span id="total-amount">₹0.00</span></strong>
+                    </div>
+                    <div class="checkout-actions" style="margin-top: 20px;">
+                        <button id="checkout-btn" class="btn btn-primary btn-full-width">
+                            <i class="fas fa-credit-card"></i> Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODALS SECTION -->
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-shipping-fast"></i> Checkout</h2>
+                <button class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <div class="form-group"><label for="customer-name">Full Name</label><input type="text" id="customer-name" name="customerName" required></div>
+                    <div class="form-group"><label for="customer-email">Email Address</label><input type="email" id="customer-email" name="customerEmail" required></div>
+                    <div class="form-group"><label for="shipping-address">Shipping Address</label><textarea id="shipping-address" name="shippingAddress" rows="3" required></textarea></div>
+                    <hr style="margin: 20px 0;">
+                    <h4>Select Payment Method</h4>
+                    <div class="payment-options">
+                        <label>
+                            <input type="radio" name="paymentMethod" value="COD" checked>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Cash on Delivery (COD)</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="paymentMethod" value="UPI">
+                            <i class="fas fa-qrcode"></i>
+                            <span>UPI / QR Code</span>
+                        </label>
+                    </div>
+                    <div id="qr-code-display" class="qr-code-container hidden">
+                        <h5>Scan to Pay</h5>
+                        <div id="qr-code-image"><div class="loading-spinner small"><i class="fas fa-spinner fa-spin"></i><p>Generating QR Code...</p></div></div>
+                        <p><strong>UPI ID:</strong> yashwanthrathi@fam</p>
+                        <p class="amount"><strong>Amount to Pay:</strong> <span id="qr-amount"></span></p>
+                        <p class="note">The payment amount is embedded in the QR code.</p>
+                    </div>
+                    <div id="screenshot-upload-section" class="form-group hidden">
+    <label for="payment-screenshot">Upload Payment Screenshot</label>
+    <input type="file" id="payment-screenshot" name="paymentScreenshot" accept="image/*,application/pdf">
+    <small class="note">Your order will not be placed until you upload a screenshot of the successful payment.</small>
+</div>
+
+<div class="modal-actions">
+    <!-- ... (your modal buttons) ... -->
+</div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary modal-cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="success-animation" style="font-size: 4rem; color: var(--success-color); margin-bottom: 1rem;"><i class="fas fa-check-circle"></i></div>
+                <h2>Order Placed Successfully!</h2>
+                <p>Thank you for your purchase. Your order has been confirmed.</p>
+                <div class="order-details" style="background: var(--background-color); padding: 15px; border-radius: var(--border-radius); margin: 20px 0;">
+                    <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+                    <p><strong>Total:</strong> <span id="order-total"></span></p>
+                    <p><strong>Payment Method:</strong> <span id="order-payment-method"></span></p>
+                </div>
+                <div class="modal-actions" style="justify-content: center;">
+                    <a href="orders.html" class="btn btn-primary">View My Orders</a>
+                    <a href="../../index.html" class="btn btn-secondary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/cart.js"></script>
+    
+</body>
+</html>
