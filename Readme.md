@@ -1,7 +1,7 @@
 # 🛒 E-Store: A Modern E-Commerce Web Application
 E-Store is a modern e-commerce platform built as a Web Development Major Project. It provides a seamless shopping experience for users and a powerful admin dashboard for managing products, orders, and customers. This project demonstrates full-stack web development skills, including frontend, backend, authentication, and data management.
 
-🔗 Live Demo / Project Video: [Click Here](YOUR_DRIVE_LINK_HERE) *(Replace with your Google Drive link)*
+🔗 Project Video: [Click Here]https://drive.google.com/file/d/1yefQuLapvV72ibpmGlSC6G46afT1Neo6/view?usp=sharing)
 
 ## ✨ Features
 ### 👤 User Storefront
